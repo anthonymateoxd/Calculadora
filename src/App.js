@@ -1,6 +1,8 @@
 import './App.css';
-import logo from './img/apex.png'
-import Boton from './components/Boton'
+import logo from './img/apex.png';
+import Boton from './components/Boton';
+import Pantalla from './components/Pantalla';
+import BotonClear from './components/BotonClear'
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         </img>
       </div>
       <div className='contenedor-calculadora'>
+        <Pantalla  />
         <div className='fila'>
           <Boton>1</Boton>
           <Boton>2</Boton>
@@ -37,7 +40,9 @@ function App() {
           <Boton>.</Boton>
           <Boton>/</Boton>
         </div>
-        <div className='fila'></div>
+        <div className='fila'>
+          <BotonClear>clear</BotonClear>
+        </div>
       </div>
     </div>
   );
