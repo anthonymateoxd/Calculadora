@@ -1,9 +1,9 @@
 import React from "react";
 import '../style/BotonClear.css'
 
-const BotonClear = (porps) => (
-    <div className="boton-clear">
-        {porps.children}
+const BotonClear = (props) => (
+    <div className="boton-clear" onClick={props.manejarClic}> 
+        {props.children}
     </div>
 )
 
